@@ -1,0 +1,430 @@
+/* ================= BASE ================= */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #bbb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ACTIVE */
+.sidebar li.active {
+  background: linear-gradient(90deg, #ffcc00, #ffdd55);
+  color: #000;
+  font-weight: 600;
+}
+
+/* HOVER */
+.sidebar li:hover {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+/* ================= MAIN ================= */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* ================= HEADER ================= */
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header p {
+  color: #777;
+}
+
+/* ================= STATS ================= */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card p {
+  color: #777;
+  font-size: 13px;
+}
+
+.card h3 {
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+/* ================= CURRENT BOOKING ================= */
+.current-booking {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.current-booking h2 {
+  margin-bottom: 10px;
+}
+
+/* IMAGE */
+.cb-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cb-image img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+/* GRID */
+.cb-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.cb-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ================= HISTORY ================= */
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.history-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.history-row:last-child {
+  border-bottom: none;
+}
+
+.status {
+  color: green;
+  font-weight: 600;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #ffcc00, #ffdd55);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .cb-grid {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 180px;
+  }
+}
+/* ================= OVERVIEW GRID ================= */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* RIGHT SIDE STACK */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CURRENT BOOKING */
+.cb-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cb-top img {
+  width: 220px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================= PAYMENTS ================= */
+.payments-page h1 {
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.payment-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.payment-card {
+  width: 200px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.payment-card h4 {
+  margin-bottom: 5px;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffcc00;
+  padding: 3px 8px;
+  font-size: 11px;
+  border-radius: 5px;
+}
+
+/* ADD PAYMENT */
+.add-payment {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-payment input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* TRANSACTIONS */
+.txn-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.paid {
+  color: green;
+  font-weight: 600;
+}
+
+.pending {
+  color: orange;
+  font-weight: 600;
+}
+
+/* SMALL BUTTON */
+.btn.small {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+/* ================= PROFILE DETAILS ================= */
+/* ================= PROFILE PAGE ================= */
+.profile-details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* center horizontally */
+  justify-content: flex-start;
+  min-height: 80vh;
+}
+
+/* TITLE */
+.profile-details-page h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================= CARD ================= */
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* ================= ICON ================= */
+.profile-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* ================= INFO ================= */
+.profile-info {
+  text-align: left;   /* better readability */
+}
+
+.profile-info label {
+  font-size: 13px;
+  color: #777;
+  display: block;
+  margin-top: 10px;
+}
+
+.profile-info p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #222;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* ================= BUTTONS ================= */
+.profile-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;   /* center buttons */
+  gap: 10px;
+}
+
+.btn.secondary {
+  background: #ddd;
+  color: #333;
+}
+/* ================= SUPPORT ================= */
+.support-page h1 {
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.faq-answer {
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* CONTACT */
+.support-textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+/* FAQ ITEM */
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+/* QUESTION */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ANSWER (HIDDEN BY DEFAULT) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* SHOW ANSWER */
+.faq-answer.show {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* ACTIVE QUESTION */
+.faq-item.active .faq-question {
+  color: #ffcc00;
+}

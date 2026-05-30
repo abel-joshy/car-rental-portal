@@ -1,0 +1,91 @@
+.message {
+  background: #f3f3f3;
+  padding: 200px 100px;
+}
+
+/* SECTION */
+.message {
+  padding: 60px 100px;
+}
+
+/* CONTAINER */
+.message-container {
+  background: linear-gradient(135deg, #f3c444, #feb407);
+  border-radius: 20px;
+  padding: 50px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT */
+.message-left h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+}
+
+/* INPUTS */
+.message-form input,
+.message-form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* TEXTAREA */
+.message-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* BUTTON */
+.message-form button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.message-form button:hover {
+  background: #333;
+}
+
+/* IMAGE */
+.message-right img {
+  width: 400px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .message-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .message-form {
+    width: 100%;
+  }
+
+  .message-right img {
+    width: 300px;
+  }
+}

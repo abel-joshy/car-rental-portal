@@ -1,0 +1,74 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* SIDEBAR */
+.admin-sidebar {
+  width: 220px;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  color: #f5b400;
+}
+
+.admin-sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.admin-sidebar a.active,
+.admin-sidebar a:hover {
+  background: #f5b400;
+  color: #111;
+}
+
+/* MAIN */
+.admin-main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+.gray { background: #7f8c8d; }
+
+/* TABLE */
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: #fff;
+  color: #000;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead {
+  background: #111;
+  color: #fff;
+}

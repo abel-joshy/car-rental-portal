@@ -1,0 +1,90 @@
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 70px 100px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* COLUMN */
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* BRAND */
+.footer-col h2 {
+  color: #f5b400;
+  margin-bottom: 15px;
+}
+
+/* HEADINGS */
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* TEXT */
+.footer-col p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* LIST */
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #f5b400;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.socials svg:hover {
+  color: #f5b400;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer {
+    padding: 50px 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

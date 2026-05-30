@@ -1,0 +1,26 @@
+.bookings-page {
+  padding: 20px;
+}
+
+.booking-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.booking-left img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.booking-right p {
+  font-size: 14px;
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+}

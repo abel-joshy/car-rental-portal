@@ -1,0 +1,90 @@
+.features {
+  background: #f3f3f3;
+  padding: 200px 100px;
+}
+
+/* TOP SECTION */
+.features-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.features-top h1 {
+  font-size: 48px;
+  font-weight: 800;
+  max-width: 520px;
+  line-height: 1.2;
+  color: #111;
+}
+
+.features-top p {
+  max-width: 480px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* CARDS */
+.features-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.feature-card {
+  background: #fff;
+  width: 220px;
+  padding: 35px 20px;
+  border-radius: 18px;
+  border: 2px solid #f5b400;
+  box-shadow: 6px 6px 0px #f5b400;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT 🔥 */
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 8px 8px 0px #f5b400;
+}
+
+/* ICON */
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  background: #111;
+  color: #f5b400;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.feature-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .features {
+    padding: 50px 20px;
+  }
+
+  .features-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .features-cards {
+    justify-content: center;
+  }
+}

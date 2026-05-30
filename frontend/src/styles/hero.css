@@ -1,0 +1,76 @@
+/* MAIN HERO */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to bottom, #F9F4E8, #FDF1D5, #E7C691);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* TEXT */
+.hero-content {
+  padding-top: 40px;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;  /* 🔥 premium font */
+  font-size: 64px;
+  font-weight: 900;
+  color: #111;
+  letter-spacing: 3px;      /* 🔥 more luxury spacing */
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+/* STAR DECORATION */
+.star {
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  font-size: 40px;
+  color: #f5b400;
+}
+
+/* CAR IMAGE */
+.hero-car {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width: 90%;
+  z-index: 2;
+}
+
+/* BOTTOM SHAPE (ORANGE CURVE) */
+.hero-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #f5b400;
+  border-top-left-radius: 60% 100%;
+  border-top-right-radius: 60% 100%;
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-car {
+    width: 100%;
+    bottom: 40px;
+  }
+
+  .star {
+    display: none;
+  }
+}
